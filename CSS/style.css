@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,500&display=swap');
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(27, 27, 27);;
+}
+
+
+/* ABA GERAL DE TUDO 1 PRINCIPAL */
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(IMG/bg1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 30s;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes animate {
+    0%{
+        background-image: url(IMG/bg.png);
+    }
+    35%{
+        background-image: url(IMG/bg5.png);
+    }
+    65%{
+        background-image: url(IMG/bg3.png);
+    }
+    100%{
+        background-image: url(IMG/bg1.png);
+    }
+}
+
+
+
+.topo {
+    font-family: 'Bebas Neue', cursive;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(27, 27, 27);
+    top: 50px;
+    width: 100%;
+}
+
+
+
+
+.btn {
+    font-family: 'Menção Desonrosa', cursive;
+    transition: 0.7s;
+    height: 80px;
+    font-size: 22px;
+    color: rgb(42, 211, 36);
+    display: flex;
+    width: 2000px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(27, 27, 27);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 10px;
+    border: none;
+}
+
+.btn:hover {
+    color: rgb(7, 145, 3);
+    transition: 0.5s;
+    background-color: rgb(168, 168, 168);
+}
+
+.icone{
+    position: absolute;
+    display: inline-block;
+    height: 95%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+}
+
+.icone a{
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background: rgb(27, 27, 27);
+    color: rgb(42, 211, 36);
+    margin: 0 6px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.icone a:hover{
+    color: rgb(7, 145, 3);
+    transition: 0.5s;
+    background-color: rgb(168, 168, 168);
+}
+.icone a i{
+    transition: 0.5s all;
+}
+.icone a:hover > i{
+    transform: scale(1.5) rotate(23deg);
+}
+
+.logo {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    margin-left: 40%;
+    transition: 0.7s;
+}
+
+.logo:hover{
+    box-shadow: rgba(6, 41, 5, 0.938) 0px 14px 28px, rgba(6, 41, 5, 0.938) 0px 10px 10px;
+    transition: 0.7s;
+
+}
+
+.title{ 
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0px 180px;
+    margin-top: 150px;
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+}
+
+
+.fallenrp {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 40px;
+    margin: 0px 180px;
+    margin-top: 8px;
+    color: white;
+}
+
+.desc {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 22px;
+    margin: 0px 180px;
+    margin-top: 6px;
+    color: rgb(255, 255, 255);
+}
+
+.btnjogar {
+    transition: 0.7s;
+    margin: 0px 180px;
+    padding: 10px 0px;
+    margin-top: 40px;
+    height: 70px;
+    width: 360px;
+    font-family: 'Libre Franklin';
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.301);
+    color: rgb(255, 255, 255); 
+}
+
+.btnjogar:hover {
+    transition: 0.4s;
+    background-color: rgb(42, 211, 36);
+    box-shadow: rgba(42, 211, 36, 0.25) 0px 54px 55px, rgba(42, 211, 36, 0.12) 0px -12px 30px, 
+    rgba(42, 211, 36, 0.12) 0px 4px 6px, rgba(42, 211, 36, 0.17) 0px 12px 13px, 
+    rgba(42, 211, 36, 0.09) 0px -3px 5px;
+
+    
+}
+
+.volume {
+    font-family: 'Libre Franklin', sans-serif;
+    transition: 0.7s;
+    height: 80px;
+    font-size: 18px;
+    color: rgba(24, 168, 43, 0.534);
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    margin-top: 270px;
+    margin-left: 200px;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.volume:hover{
+    background-color: rgba(73, 73, 73, 0.781);
+    box-shadow: rgba(168, 168, 168, 0.24) 0px 4px 10px;
+    border-radius: 12px;
+    color: rgb(42, 211, 36);
+
+
+}
+
+footer {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 18px;
+    margin-top: 0px;
+    text-align: center;
+    color: rgba(24, 168, 43, 0.534);
+}
